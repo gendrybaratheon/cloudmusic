@@ -1,0 +1,12 @@
+/*前台样式表*/
+
+.front-index-navbar {
+    background-color: #C62F2F;
+}
+
+.front-index-navbar-brand {
+    color: #FFFFFF;
+}
+.front-index-navbar-brand:hover {
+    color: #FFFFFF;
+}

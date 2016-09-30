@@ -8,10 +8,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Cloud Music') }}</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/front.css">
 
     <!-- Scripts -->
     <script>
@@ -21,7 +22,7 @@
     </script>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar front-index-navbar navbar-static-top">
         <div class="container">
             <div class="navbar-header">
 
@@ -34,8 +35,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <a class="navbar-brand front-index-navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Cloud Music') }}
                 </a>
             </div>
 
@@ -49,8 +50,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        {{--<li><a href="{{ url('/login') }}">登陆</a></li>--}}
+                        {{--<li><a href="{{ url('/register') }}">注册</a></li>--}}
+                        <li><a href="">未登录</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
